@@ -1,4 +1,40 @@
-*
-{
+*{
     background: black;
-    color: white;}
+    color: white;
+}
+
+body{
+    font-size: 16px;
+}
+
+/* Navigation Bar Section*/
+nav ul{
+    background-color: transparent;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+li{
+    float:left;
+}
+
+li a{
+    display: block;
+    background-color:transparent;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: orangered;
+}
+
