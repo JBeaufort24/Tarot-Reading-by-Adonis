@@ -1,6 +1,22 @@
 *{
     background: black;
     color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/*Header for page*/
+header{
+    background-color: orangered;
+    padding: 10px 20px;
+}
+
+header p{
+    font-size: 100px;
+    font-style: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
 }
 
 body{
@@ -15,7 +31,7 @@ nav ul{
 ul{
     list-style-type: none;
     margin: 0;
-    padding: 1px;
+    padding: 0;
     overflow: hidden;
     position: sticky;
     top: 0;
