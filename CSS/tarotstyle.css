@@ -53,3 +53,14 @@ li a:hover{
     background-color: orangered;
 }
 
+/*Home Section*/
+
+/*About Me Section*/
+#about p {
+    margin:10px;
+}
+
+/*Section Control*/
+#home, #social, #contact {
+    background-color: orangered;
+}
