@@ -1,6 +1,4 @@
 *{
-    background: black;
-    color: white;
     padding: 0;
     margin: 0;
 }
@@ -20,6 +18,7 @@ header h1{
 
 body{
     font-size: 16px;
+    background: black;
 }
 
 /* Navigation Bar Section*/
@@ -62,5 +61,29 @@ li a:hover{
 
 /*Section Control*/
 #home, #social, #contact {
-    background-color: orangered;
+    background: orangered;
+}
+
+#about, #packages, #info{
+    background: black;
+    color: white;
+}
+
+/*More Info Section*/
+#info ul{
+   list-style-type: disc;
+   margin: 10px;
+   padding: 10px;
+}
+
+#info li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#info p{
+    margin: 0px 40px;
+    padding: 10px;
+    background: white;
+    color: black;
 }
