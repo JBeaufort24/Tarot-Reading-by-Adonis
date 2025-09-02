@@ -69,6 +69,18 @@ li a:hover{
     color: white;
 }
 
+/*Contact Me*/
+.contactdetails .column{
+    width: 25%;
+    float: left;
+}
+
+.contactdetails:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*More Info Section*/
 #info ul{
    list-style-type: disc;
@@ -77,8 +89,7 @@ li a:hover{
 }
 
 #info li{
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 0px;
 }
 
 #info p{
@@ -87,3 +98,5 @@ li a:hover{
     background: white;
     color: black;
 }
+
+/*Footer/*
