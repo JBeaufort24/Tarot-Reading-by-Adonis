@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-/*Header for page*/
+/*Header*/
 header{
     background: orangered;
     padding: 10px 20px;
@@ -14,6 +14,12 @@ header{
 
 header h1{
     background-color: transparent;
+}
+
+/*Body and Headings*/
+h1{
+    margin: 10px 5px;
+    text-align: center;
 }
 
 body{
@@ -59,14 +65,28 @@ li a:hover{
     margin:10px;
 }
 
-/*Section Control*/
-#home, #social, #contact {
-    background: orangered;
+/*Socail Media*/
+#social .block{
+    background: aliceblue;
+    color: black;
+    padding: 10px;
+    margin: 10px 100px;
 }
 
-#about, #packages, #info{
-    background: black;
-    color: white;
+/*Packages*/
+#packages .block{
+    background: aliceblue;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    width: 20%;
+    float:left ;
+}
+
+#packages .blocks:after{
+    content: "";
+    display:block;
+    clear:both;  
 }
 
 /*Contact Me*/
@@ -97,6 +117,17 @@ li a:hover{
     padding: 10px;
     background: white;
     color: black;
+}
+
+/*Section Control*/
+#home, #social, #contact {
+    background: orangered;
+    padding: 1px;
+}
+
+#about, #packages, #info{
+    background: black;
+    color: white;
 }
 
 /*Footer/*
