@@ -89,6 +89,10 @@ li a:hover{
     clear:both;  
 }
 
+#packages img{
+    width: 100%;
+}
+
 /*Contact Me*/
 .contactdetails .column{
     width: 25%;
