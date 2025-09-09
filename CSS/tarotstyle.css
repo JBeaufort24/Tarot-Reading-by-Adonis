@@ -70,7 +70,14 @@ li a:hover{
     background: aliceblue;
     color: black;
     padding: 10px;
-    margin: 10px 100px;
+    margin: 10px 50px;
+}
+
+#social .block li{
+    padding: 5px;
+    margin: 10px;
+    background-color: orangered;
+    color: white;
 }
 
 /*Packages*/
