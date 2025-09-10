@@ -25,6 +25,7 @@ h1{
 body{
     font-size: 16px;
     background: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Navigation Bar Section*/
@@ -78,9 +79,6 @@ nav li a:hover{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    top: 0;
-    background-color: transparent;
 }
 
 #social li{
@@ -153,3 +151,5 @@ nav li a:hover{
 }
 
 /*Footer/*
+
+/*Responsive Web Design*/
