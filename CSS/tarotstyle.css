@@ -82,11 +82,12 @@ nav li a:hover{
 }
 
 #social li{
-    float:left;
+    width: 150px;
     padding: 10px;
     margin: 10px;
     background-color: orangered;
     color: white;
+    float: inline-end;
 }
 
 /*Packages*/
