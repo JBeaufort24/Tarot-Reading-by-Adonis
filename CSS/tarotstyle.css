@@ -64,6 +64,10 @@ nav li a:hover{
 }
 
 /*Socail Media*/
+#social a{
+    text-decoration: none;
+}
+
 #social .block{
     background: aliceblue;
     color: black;
@@ -77,17 +81,21 @@ nav li a:hover{
 
 #social ul{
     list-style-type: none;
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
 #social li{
-    width: 150px;
+    max-width: 100%;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     background-color: orangered;
     color: white;
-    float: inline-end;
+    float: inline-start;
+}
+
+#social .socialimg{
+    margin: 50px 0;
 }
 
 /*Packages*/
@@ -227,9 +235,9 @@ nav li a:hover{
     #contact .contactdetails .column{
         width: 100%;
     }
-
 }
 
 /*Tablet Devices*/
+
 
 /*Desktop Devices*/
