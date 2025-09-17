@@ -98,7 +98,19 @@ nav li a:hover{
     margin: 5px;
     width: 20%;
     float:left ;
-    
+}
+
+#packages .blocks{
+    margin: 0 10px;
+}
+
+#packages h2{
+    text-align: center;
+}
+
+#packages .block{
+    width: 30%;
+    float: left;
 }
 
 #packages .blocks:after{
@@ -121,6 +133,7 @@ nav li a:hover{
     padding: 5px;
     font-size: large;
     font-weight: 600;
+    text-align: center;
 }
 
 /*Payments*/
@@ -180,3 +193,38 @@ nav li a:hover{
 /*Footer/*
 
 /*Responsive Web Design*/
+/*Mobile Devices*/
+@media only screen and (max-width: 600px)
+{
+    #social li{
+        width: 95%;
+        margin: 1px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #social .block img{
+        max-width: 95%;
+        margin: 10px;
+    }
+
+    #packages .block{
+        padding: 0;
+        margin: 10px 0;
+        min-width: 100%;
+        float:none;
+    }   
+
+    #packages .price{
+        margin: 0 25%;
+    }
+
+    #contact .contactdetails .column{
+        width: 100%;
+    }
+
+}
+
+/*Tablet Devices*/
+
+/*Desktop Devices*/
