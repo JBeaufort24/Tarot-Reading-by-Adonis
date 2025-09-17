@@ -238,6 +238,11 @@ nav li a:hover{
 }
 
 /*Tablet Devices*/
-
+@media only screen and (max-width: 992px)
+{
+    #packages .block{
+    width: 100%;
+    }
+}
 
 /*Desktop Devices*/
