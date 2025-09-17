@@ -98,6 +98,7 @@ nav li a:hover{
     margin: 5px;
     width: 20%;
     float:left ;
+    
 }
 
 #packages .blocks:after{
@@ -108,6 +109,18 @@ nav li a:hover{
 
 #packages img{
     width: 100%;
+}
+
+#packages li{
+    padding: 5px;
+}
+
+#packages .price{
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    font-size: large;
+    font-weight: 600;
 }
 
 /*Contact Me*/
