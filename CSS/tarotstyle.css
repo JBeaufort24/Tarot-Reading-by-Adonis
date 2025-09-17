@@ -23,7 +23,7 @@ h1{
 }
 
 body{
-    font-size: 16px;
+    font-size: 1rem;
     background: black;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -196,6 +196,11 @@ nav li a:hover{
 /*Mobile Devices*/
 @media only screen and (max-width: 600px)
 {
+    nav li{
+        float:left;
+        width: 50%;
+    }
+
     #social li{
         width: 95%;
         margin: 1px;
