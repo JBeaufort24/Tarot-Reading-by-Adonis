@@ -219,6 +219,12 @@ nav li a:hover{
 /*Mobile Devices*/
 @media only screen and (max-width: 600px)
 {
+    #home .video{
+        width: 100%;
+        padding: 0;
+        margin:0 ;
+    }
+
     nav li{
         float:left;
         width: 50%;
