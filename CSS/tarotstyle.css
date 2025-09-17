@@ -60,6 +60,14 @@ nav li a:hover{
 }
 
 /*Home Section*/
+.video{
+    margin: 0px 25%;
+}
+
+#home video{
+    height:auto;
+    width: 100%;
+}
 
 /*About Me Section*/
 #about p {
