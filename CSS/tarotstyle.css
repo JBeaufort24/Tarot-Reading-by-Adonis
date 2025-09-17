@@ -125,6 +125,7 @@ nav li a:hover{
 
 #packages li{
     padding: 5px;
+    list-style-type: none;
 }
 
 #packages .price{
@@ -137,7 +138,6 @@ nav li a:hover{
 }
 
 /*Payments*/
-
 #payments .paymentdetails .column{
     width: 50%;
     float: left;
