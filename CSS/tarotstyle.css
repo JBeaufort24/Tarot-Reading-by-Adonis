@@ -28,6 +28,10 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Navigation Bar Section*/
 nav ul{
     list-style-type: none;
@@ -49,7 +53,6 @@ nav li a{
     color:white;
     text-align: center;
     padding: 10px;
-    text-decoration: none;
 }
 
 nav li a:hover{
@@ -64,10 +67,6 @@ nav li a:hover{
 }
 
 /*Socail Media*/
-#social a{
-    text-decoration: none;
-}
-
 #social .block{
     background: aliceblue;
     color: black;
@@ -169,9 +168,17 @@ nav li a:hover{
     clear: both;
 }
 
+#contact a{
+    color: orangered;
+}
+
+#contact a:hover{
+    color: white;
+}
+
 /*More Info Section*/
 #info ul{
-   list-style-type: disc;
+   list-style-type: none;
    margin: 10px;
    padding: 10px;
 }
