@@ -123,13 +123,26 @@ nav li a:hover{
     font-weight: 600;
 }
 
+/*Payments*/
+
+#payments .paymentdetails .column{
+    width: 50%;
+    float: left;
+}
+
+#payments .paymentdetails:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /*Contact Me*/
-.contactdetails .column{
+#contact .contactdetails .column{
     width: 25%;
     float: left;
 }
 
-.contactdetails:after{
+#contact .contactdetails:after{
     content: "";
     display: table;
     clear: both;
@@ -154,12 +167,12 @@ nav li a:hover{
 }
 
 /*Section Control*/
-#home, #social, #contact {
+#home, #social, #payments, #info {
     background: orangered;
     padding: 1px;
 }
 
-#about, #packages, #info{
+#about, #packages, #contact{
     background: black;
     color: white;
 }
