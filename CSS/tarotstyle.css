@@ -250,6 +250,13 @@ footer ul{
 footer li{
     float: right;
     color: white;
+    width: 25%;
+}
+
+footer li:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 footer a{
@@ -269,6 +276,7 @@ footer img{
 footer p{
     color: white;
     text-align: right;
+    padding-top: 10px;
 }
 
 /*Responsive Web Design*/
@@ -316,6 +324,14 @@ footer p{
     #contact .contactdetails .column{
         width: 100%;
     }
+
+    footer p{
+        padding-top: 20px;
+    }
+
+    footer li{
+        width: 100%;
+    }
 }
 
 /*Tablet Devices*/
@@ -334,6 +350,10 @@ footer p{
     header h1{
         font-size: 3em;
     }
+
+    footer p{
+    padding-top: 30px;
+}
 }
 
 /*Desktop Devices*/
