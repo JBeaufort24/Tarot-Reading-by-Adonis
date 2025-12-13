@@ -161,8 +161,12 @@ nav li a:hover{
 }
 
 /*Payments*/
+#payments {
+    height: 100px;
+}
+
 #payments .paymentdetails .column{
-    width: 50%;
+    width: 25%;
     float: left;
 }
 
@@ -170,6 +174,19 @@ nav li a:hover{
     content: "";
     display: table;
     clear: both;
+}
+
+a.payment{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    margin: 0 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+#payments a:hover{
+    background-color: rgba(255, 0, 0, 0.63);
+    
 }
 
 /*Contact Me*/
@@ -281,15 +298,15 @@ footer p{
     }
 
     #social .block img{
-        max-width: 95%;
+        width: 95%;
         margin: 10px;
     }
 
     #packages .block{
         padding: 0;
         margin: 10px 0;
-        min-width: 100%;
-        float:none;
+        width: 100%;
+        float: none;
     }   
 
     #packages .price{
@@ -303,10 +320,15 @@ footer p{
 
 /*Tablet Devices*/
 @media only screen and (max-width: 992px)
-{
+{    
+    nav li{
+        float:left;
+        width: 50%;
+    }
+
     #packages .block{
-    width: 95%;
-    float: none;
+        width: 95%;
+        float: none;
     }
 
     header h1{
