@@ -279,6 +279,10 @@ footer p{
     padding-top: 10px;
 }
 
+footer a.bdp {
+    color: orangered;
+}
+
 /*Responsive Web Design*/
 /*Mobile Devices*/
 @media only screen and (max-width:600px)
@@ -328,9 +332,10 @@ footer p{
     footer p{
         padding-top: 20px;
     }
-
-    footer li{
-        width: 100%;
+    
+    footer li {
+    padding: 5px 0 5px 0;
+    width: 50%;
     }
 }
 
