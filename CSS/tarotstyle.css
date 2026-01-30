@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Header*/
+header{
+    background: orangered;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+
+header h1{
+    background-color: transparent;
+    font-size: 5em;
+}
+
+header img{
+    width: 40%;
+}
+
+/*Body and Headings*/
+h1{
+    margin: 10px 5px;
+    text-align: center;
+}
+
+body{
+    font-size: 1rem;
+    background: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navigation Bar Section*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+}
+
+nav li{
+    float:left;
+}
+
+nav li a{
+    display: block;
+    background-color:transparent;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav li a:hover{
+    background-color: orangered;
+}
+
+/*Home Section*/
+.video{
+    margin: 0px 25%;
+}
+
+#home video{
+    height:auto;
+    width: 100%;
+}
+
+#home p{
+    text-align: center;
+}
+
+/*About Me Section*/
+#about p {
+    margin:10px 10%;
+}
+
+/*Socail Media*/
+#social .block{
+    background: aliceblue;
+    color: black;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+#social .block img{
+    width: 400px;
+}
+
+#social ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+#social li{
+    max-width: 100%;
+    padding: 10px;
+    margin: 5px;
+    background-color: orangered;
+    color: white;
+    float: inline-start;
+}
+
+#social .socialimg{
+    margin: 50px 0;
+}
+
+/*Packages*/
+#packages .block{
+    background: aliceblue;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    width: 20%;
+    float:left ;
+}
+
+#packages .blocks{
+    margin: 0 10px;
+}
+
+#packages h2{
+    text-align: center;
+}
+
+#packages .block{
+    width: 30%;
+    float: left;
+}
+
+#packages .blocks:after{
+    content: "";
+    display:block;
+    clear:both;  
+}
+
+#packages img{
+    width: 100%;
+}
+
+#packages li{
+    padding: 5px;
+    list-style-type: none;
+}
+
+#packages .price{
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Payments*/
+#payments {
+    height: 100px;
+}
+
+#payments .paymentdetails .column{
+    width: 25%;
+    float: left;
+}
+
+#payments .paymentdetails:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a.payment{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    margin: 0 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+#payments a:hover{
+    background-color: rgba(255, 0, 0, 0.63);
+    
+}
+
+/*Contact Me*/
+#contact .contactdetails .column{
+    width: 25%;
+    float: left;
+}
+
+#contact .contactdetails:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contact a{
+    color: orangered;
+}
+
+#contact a:hover{
+    color: white;
+}
+
+/*More Info Section*/
+#info ul{
+   list-style-type: none;
+   margin: 10px;
+   padding: 10px;
+}
+
+#info li{
+    padding: 10px 0px;
+}
+
+#info p{
+    margin: 0px 40px;
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+/*Section Control*/
+#home, #social, #payments, #info {
+    background: orangered;
+    padding: 1px;
+}
+
+#about, #packages, #contact{
+    background: black;
+    color: white;
+}
+
+/*Footer*/
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    bottom: 0;
+    background-color: transparent;
+}
+
+footer li{
+    float: right;
+    color: white;
+    width: 25%;
+}
+
+footer li:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer a{
+    color: white;
+    padding:20px;
+}
+
+footer a:hover{
+    color: orangered;
+}
+
+footer img{
+    width: 10%;
+    margin: 10px;
+}
+
+footer p{
+    color: white;
+    text-align: right;
+    padding-top: 10px;
+}
+
+/*Responsive Web Design*/
+/*Mobile Devices*/
+@media only screen and (max-width:600px)
+{
+    header h1{
+        font-size: 2em;
+    }
+
+    #home .video{
+        width: 100%;
+        padding: 0;
+        margin:0 ;
+    }
+
+    nav li{
+        float:left;
+        width: 50%;
+    }
+
+    #social li{
+        width: 95%;
+        margin: 1px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #social .block img{
+        width: 95%;
+        margin: 10px;
+    }
+
+    #packages .block{
+        padding: 0;
+        margin: 10px 0;
+        width: 100%;
+        float: none;
+    }   
+
+    #packages .price{
+        margin: 0 25%;
+    }
+
+    #contact .contactdetails .column{
+        width: 100%;
+    }
+
+    footer p{
+        padding-top: 20px;
+    }
+
+    footer li{
+        width: 100%;
+    }
+}
+
+/*Tablet Devices*/
+@media only screen and (max-width: 992px)
+{    
+    nav li{
+        float:left;
+        width: 50%;
+    }
+
+    #packages .block{
+        width: 95%;
+        float: none;
+    }
+
+    header h1{
+        font-size: 3em;
+    }
+
+    footer p{
+    padding-top: 30px;
+}
+}
+
+/*Desktop Devices*/
