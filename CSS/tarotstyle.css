@@ -1,364 +1,358 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+/* --- Design Tokens & CSS Variables --- */
+        :root {
+            --bg-primary: #0d0c12;
+            --bg-secondary: #16141f;
+            --bg-card: #1c1926;
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #f3e5ab;
+            --text-light: #f5f5f7;
+            --text-muted: #a09cb0;
+            --border-color: rgba(214, 175, 55, 0.3);
+            --font-display: 'Georgia', serif;
+            --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-/*Header*/
-header{
-    background: orangered;
-    padding: 10px;
-    text-align: center;
-    color:white;
-}
+        /* --- Reset & Global Styles --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-header h1{
-    background-color: transparent;
-    font-size: 5em;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-header img{
-    width: 40%;
-}
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-light);
+            font-family: var(--font-sans);
+            line-height: 1.1;
+            overflow-x: hidden;
+        }
 
-/*Body and Headings*/
-h1{
-    margin: 10px 5px;
-    text-align: center;
-}
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            color: var(--accent-gold);
+            letter-spacing: 5px;
+            text-align: center;
+        }
 
-body{
-    font-size: 1rem;
-    background: black;
-    font-family: 'Courier New', Courier, monospace;
-}
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .hero-span{
+            color: var(--accent-gold-hover);
+        }
 
-a{
-    text-decoration: none;
-}
+        /* --- Layout Container --- */
+        .container {
+            margin: 0 auto;
+            padding: 2em 1em;
+        }
 
-/* Navigation Bar Section*/
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    background-color: transparent;
-}
+        section {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-nav li{
-    float:left;
-}
+        /* --- Header & Navigation --- */
+        header {
+            background-color: rgba(13, 12, 18, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+        }
 
-nav li a{
-    display: block;
-    background-color:transparent;
-    color:white;
-    text-align: center;
-    padding: 10px;
-}
+        .nav-container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+        }
 
-nav li a:hover{
-    background-color: orangered;
-}
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.1em;
+            font-weight: bold;
+            color: var(--accent-gold);
+        }
 
-/*Home Section*/
-.video{
-    margin: 0px 25%;
-}
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1em;
+        }
 
-#home video{
-    height:auto;
-    width: 100%;
-}
+        .nav-links a {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
 
-#home p{
-    text-align: center;
-}
+        .nav-links a:hover {
+            color: var(--accent-gold);
+        }
 
-/*About Me Section*/
-#about p {
-    margin:10px 10%;
-}
+        /* --- Hero Section --- */
+        .hero {
+            padding: 5em 1em 3em 1em;
+            text-align: center;
+            background: radial-gradient(circle at center, #1c152e 0%, var(--bg-primary) 70%);
+        }
 
-/*Socail Media*/
-#social .block{
-    background: aliceblue;
-    color: black;
-    padding: 10px;
-    margin: 10px 20px;
-}
+        .hero h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
 
-#social .block img{
-    width: 400px;
-}
+        .hero p {
+            font-size: 1.1em;
+            color: var(--text-muted);
+            margin: 2em auto 4em auto;
+        }
 
-#social ul{
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-}
+        .btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 1em 2em;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-#social li{
-    max-width: 100%;
-    padding: 10px;
-    margin: 5px;
-    background-color: orangered;
-    color: white;
-    float: inline-start;
-}
+        .btn:hover {
+            background-color: var(--accent-gold);
+            color: var(--bg-primary);
+            box-shadow: 0 0 15px rgba(214, 175, 55, 0.4);
+        }
 
-#social .socialimg{
-    margin: 50px 0;
-}
+        /* --- Services Section --- */
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+        }
 
-/*Packages*/
-#packages .block{
-    background: aliceblue;
-    color: black;
-    padding: 10px;
-    margin: 5px;
-    width: 20%;
-    float:left ;
-}
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 2em;
+        }
 
-#packages .blocks{
-    margin: 0 10px;
-}
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1em;
+        }
 
-#packages h2{
-    text-align: center;
-}
+        .service-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s style, border-color 0.3s;
+        }
 
-#packages .block{
-    width: 30%;
-    float: left;
-}
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold);
+        }
 
-#packages .blocks:after{
-    content: "";
-    display:block;
-    clear:both;  
-}
+        .service-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
 
-#packages img{
-    width: 100%;
-}
+        .service-duration {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            letter-spacing: 5px;
+            margin-bottom: 1.5em;
+        }
 
-#packages li{
-    padding: 5px;
-    list-style-type: none;
-}
+        .service-description {
+            color: var(--text-muted);
+            margin-bottom: 2em;
+            flex-grow: 1;
+        }
 
-#packages .price{
-    background-color: orangered;
-    color: white;
-    padding: 5px;
-    font-size: large;
-    font-weight: 600;
-    text-align: center;
-}
+        .service-price {
+            font-family: var(--font-display);
+            font-size: 2em;
+            color: var(--accent-gold);
+            margin-bottom: 1.5em;
+        }
 
-/*Payments*/
-#payments {
-    height: 100px;
-}
+        /* --- Booking Section --- */
+        .booking-box {
+            background-color: var(--bg-secondary);
+            border: 1px dashed var(--border-color);
+            border-radius: 10px;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-muted);
+            padding: 1em;
+            text-align: center;
+        }
 
-#payments .paymentdetails .column{
-    width: 25%;
-    float: left;
-}
+        /* --- Social Media Tarot Spread Section --- */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            justify-content: center;
+            margin: 0 auto;
+        }
 
-#payments .paymentdetails:after{
-    content: "";
-    display: table;
-    clear: both;
-}
+        .tarot-card {
+            aspect-ratio: 1 / 1.618; /* Standard Tarot Card Golden Ratio */
+            background-color: var(--bg-card);
+            border: 1px solid var(--accent-gold);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s;
+        }
 
-a.payment{
-    background-color: aliceblue;
-    padding: 10px 20px;
-    margin: 0 20px;
-    color: black;
-    border-radius: 10px;
-}
+        /* Ornate card border design detail */
+        .tarot-card::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            border: 1px solid rgba(214, 175, 55, 0.2);
+            border-radius: 8px;
+            pointer-events: none;
+        }
 
-#payments a:hover{
-    background-color: rgba(255, 0, 0, 0.63);
-    
-}
+        .tarot-card:hover {
+            transform: translateY(-15px) rotate(2deg);
+            box-shadow: 0 15px 30px rgba(214, 175, 55, 0.25);
+            background-color: #221e2e;
+        }
 
-/*Contact Me*/
-#contact .contactdetails .column{
-    width: 25%;
-    float: left;
-}
+        .card-number {
+            font-size: 1em;
+            color: var(--accent-gold);
+            font-family: var(--font-display);
+        }
 
-#contact .contactdetails:after{
-    content: "";
-    display: table;
-    clear: both;
-}
+        .card-icon {
+            font-size: 2em;
+            margin: auto 0;
+        }
 
-#contact a{
-    color: orangered;
-}
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            overflow-wrap: normal;
+        }
 
-#contact a:hover{
-    color: white;
-}
+        /* --- Contact Form Section --- */
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            padding: 1.5em;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
 
-/*More Info Section*/
-#info ul{
-   list-style-type: none;
-   margin: 10px;
-   padding: 10px;
-}
+        .form-group {
+            margin-bottom: 2em;
+        }
 
-#info li{
-    padding: 10px 0px;
-}
+        .form-group label {
+            display: block;
+            font-size: 0.9em;
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
 
-#info p{
-    margin: 0px 40px;
-    padding: 10px;
-    background: white;
-    color: black;
-}
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            background-color: var(--bg-primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 0.8em 1em;
+            color: var(--text-light);
+            font-family: var(--font-sans);
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
 
-/*Section Control*/
-#home, #social, #payments, #info {
-    background: orangered;
-    padding: 1px;
-}
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
 
-#about, #packages, #contact{
-    background: black;
-    color: white;
-}
+        .form-privacy-note {
+            font-size: 0.8em;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 2em;
+        }
 
-/*Footer*/
-footer ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 10px 20px;
-    bottom: 0;
-    background-color: transparent;
-}
+        /* --- Footer --- */
+        footer {
+            background-color: #08070b;
+            text-align: center;
+            padding: 2em;
+            font-size: 1em;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        a.footer-link{
+            color: var(--accent-gold);
+        }
+        
+        a.footer-link:hover{
+            color: var(--accent-gold-hover);
+        }
 
-footer li{
-    float: right;
-    color: white;
-    width: 25%;
-}
-
-footer li:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-footer a{
-    color: white;
-    padding:20px;
-}
-
-footer a:hover{
-    color: orangered;
-}
-
-footer img{
-    width: 10%;
-    margin: 10px;
-}
-
-footer p{
-    color: white;
-    text-align: right;
-    padding-top: 10px;
-}
-
-footer a.bdp {
-    color: orangered;
-}
-
-/*Responsive Web Design*/
-/*Mobile Devices*/
-@media only screen and (max-width:600px)
-{
-    header h1{
-        font-size: 2em;
-    }
-
-    #home .video{
-        width: 100%;
-        padding: 0;
-        margin:0 ;
-    }
-
-    nav li{
-        float:left;
-        width: 50%;
-    }
-
-    #social li{
-        width: 95%;
-        margin: 1px;
-        padding: 5px;
-        text-align: center;
-    }
-
-    #social .block img{
-        width: 95%;
-        margin: 10px;
-    }
-
-    #packages .block{
-        padding: 0;
-        margin: 10px 0;
-        width: 100%;
-        float: none;
-    }   
-
-    #packages .price{
-        margin: 0 25%;
-    }
-
-    #contact .contactdetails .column{
-        width: 100%;
-    }
-
-    footer p{
-        padding-top: 20px;
-    }
-    
-    footer li {
-    padding: 5px 0 5px 0;
-    width: 50%;
-    }
-}
-
-/*Tablet Devices*/
-@media only screen and (max-width: 992px)
-{    
-    nav li{
-        float:left;
-        width: 50%;
-    }
-
-    #packages .block{
-        width: 95%;
-        float: none;
-    }
-
-    header h1{
-        font-size: 3em;
-    }
-
-    footer p{
-    padding-top: 30px;
-}
-}
-
-/*Desktop Devices*/
+        /* --- Responsive Breakpoints --- */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Can be updated to a burger menu style later if required */
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .contact-form {
+                padding: 1.5rem;
+            }
+        }
