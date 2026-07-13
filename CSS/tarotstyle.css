@@ -200,15 +200,19 @@
         }
 
         /* --- Booking Section --- */
+        iframe{
+            color: var(--text-muted);
+            background-color: var(--text-light);
+        }
+        
         .booking-box {
-            background-color: var(--bg-secondary);
+            
             border: 1px dashed var(--border-color);
             border-radius: 10px;
             min-height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--text-muted);
             padding: 1em;
             text-align: center;
         }
